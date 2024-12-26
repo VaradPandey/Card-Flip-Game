@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(28, 4, 6);
+    position: relative;
+    background-image: url(/Flip/images/Team.png);
+    background-size: cover;
+    background-blend-mode:overlay    ;
+}
+.titletext{
+    color: rgb(230, 190, 123);
+    font-size: 45px;
+    text-align: center;
+}
+.container{
+    margin-top: -15px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.game{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 650px;
+    column-gap: 10px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    background-color: hsla(357, 75%, 19%, 1);
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(197, 160, 96);
+    cursor: pointer;
+    position: relative;
+    background-image: url('images/bastardlogo.png');
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+.box:hover{
+    transform: scale(1.05);
+    transition: transform 0.15s ease;
+    box-shadow: 20px;
+}
+.boxtext{
+    position: absolute;
+    opacity: 0;
+}
+.characterimg{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+    opacity: 0;
+}
+.reset{
+    margin-top: -25px;
+    width: 180px;
+    height: 80px;
+    background-color: hsla(357, 75%, 19%, 1);
+    border: 3px;
+    border-style: solid;
+    border-color: rgb(197, 160, 96);
+    cursor: pointer;
+    position: relative;
+    color: rgb(230, 190, 123);
+    font-size: 30px;
+}
+.resetdiv{
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 270px;
+}
+
+/*--black: hsla(0, 0%, 0%, 1);
+--chocolate-cosmos: hsla(357, 75%, 19%, 1);
+--raw-umber: hsla(24, 27%, 45%, 1);
+--chestnut: hsla(14, 41%, 40%, 1);
+--buff: hsla(29, 62%, 65%, 1);
+*/
+
+.currentscore{
+    color : white;
+    color: rgb(230, 190, 123);
+    font-size: 45px;
+    position: absolute;
+    padding-left: 30px;
+    padding-top: 120px;
+}
+.highscore{
+    color : white;
+    color: rgb(230, 190, 123);
+    font-size: 45px;
+    position: absolute;
+    padding-left: 30px;
+}
